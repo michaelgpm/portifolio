@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;  
+}
+:root {
+    --dt-padding:30px;
+    --mob-padding: 2%;
+    --p-margin:0 0 1em 0;
+    --dark-colour:black;
+    --light-colour:white;
+    --footer-colour:#f05e35;
+    --debug-border:none;
+    --no-border:none;
+}
+html{
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body{
+    background-color: #555;
+    font-family: sans-serif;
+}
+.ponto{
+    height: 40px;
+    width: 40px;
+    margin-bottom: 3px;
+    background-color: #f05e35;   
+    color: var(--light-colour);
+    clip-path: circle(30%);
+}
+.topo {
+    display: flex;
+    gap: 10px;
+    background: var(--dark-colour);
+    color: var(--light-colour);
+    font-size: 30px;
+    padding: var(--dt-padding);
+    max-height: 160px;
+    border-radius: 50px;
+    text-align: left center;
+    margin-top: 5px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    min-height: 80vh;
+}
+.grupobotao{
+    display: flex;
+    gap: 10px;
+}
+.menu {
+    display: flex;
+    background-color: #f05e35;   
+    color: var(--light-colour);
+    padding: 75px;
+    font-size: 25px;
+    height: 200px;
+    width: 250px;
+    margin-top: auto;
+    margin-right: 700px;
+    clip-path: circle(40%);
+    text-align: center bottom;    
+}
+.menu:hover {
+    background: #45a049 ;
+}
+.botaocentr{  
+    color: var(--light-colour);    
+}  
+.menuesq {
+    display: flex;
+    background-color: transparent;
+    height: 200px;
+    width: 250px;
+}
+.menuesq2{
+    background: transparent;
+    height: 700px;
+    color: var(--light-colour);
+}
+.perfil {
+width: 550px;
+height: 800px;
+background-image: url('perfil.jpg') center/cover no-repeat;
+background-position: center center;
+background-size: cover;
+clip-path: circle(40%);
+margin-left: auto;
+margin-right:50px ;
+}
+
+@media (min-width:100px) {
+.perfil {
+    background-image: url('perfil.jpg');
+    background-position: center;
+    height: 180px;
+    clip-path: circle(40%);
+    padding: 75px;
+}}
+@media screen and (min-width: 200px) {
+.perfil {
+    background-image: url('perfil.jpg');
+    background-position: center;
+    height: 250px;
+    clip-path: circle(40%);
+}}
+@media screen and (min-width: 700px) {
+.perfil {
+    background-image: url('perfil.jpg');
+    background-position: center;
+    max-width: 750px;
+    height: 450px;
+    clip-path: circle(40%);
+}}
+.rodape{
+    background:var(--dark-colour);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.fotosobre{
+    height: 150px;
+    clip-path: circle(40%);
+}
